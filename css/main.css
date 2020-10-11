@@ -264,7 +264,9 @@ nav {
 }
 
 /************** Header-main ************/
-
+main {
+  padding: 60px 0;
+}
 .info-title {
   font-size: 52px;
   font-family: MuseoSansCyrl700, sans-serif;
@@ -276,7 +278,7 @@ nav {
 }
 
 .info-card {
-  padding-top: 20px;
+  padding-top: 150px;
 }
 
 .mycard {
@@ -376,7 +378,9 @@ nav {
 }
 
 .social-text {
-  padding: 25px 0;
+  padding: 20px 0;
+  font-size: 18px;
+  font-family: Muse0SansCyrl500, sans-serif;
 }
 
 .sport-right {
@@ -458,11 +462,11 @@ nav {
 
 .student-card__icon::before {
   content: "";
-  width: 90px;
+  width: 100px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.529);
   position: absolute;
-  right: -130%;
+  right: -115%;
   top: 50%;
 }
 
@@ -636,7 +640,6 @@ nav {
 
 .footer-bottom {
   padding-top: 45px;
-  font-size: 14px;
 }
 
 /************* Media queries **************/
