@@ -676,6 +676,23 @@ main {
 }
 
 @media (max-width: 768px) {
+  .nav-carousel {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 20px 0;
+  }
+
+  .nav-carousel__col {
+    max-width: 100% !important;
+    flex: 0 0 100%;
+    padding: 0 20px;
+  }
+
+  .nav-carousel__col:nth-child(2) {
+    max-width: 100% !important;
+    padding: 0 20px;
+  }
+
   .header {
     height: 170vh;
   }
@@ -693,25 +710,31 @@ main {
 @media (max-width: 700px) {
   .nav-carousel__col:nth-child(2) {
     margin-top: 10px;
-    padding: 0;
+    padding: 0 20px;
   }
+
   .nav-settings__icon,
   .nav-settings__languages {
     display: none;
   }
+
   .nav-settings {
     justify-content: flex-end !important;
   }
+
   main {
     padding-top: 400px !important;
   }
+
   .info-title {
     font-size: 35px;
     padding-top: 30px;
   }
+
   .info-card {
     padding-top: 30px;
   }
+
   .mycard {
     margin-top: 10px;
   }
