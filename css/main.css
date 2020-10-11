@@ -486,7 +486,8 @@ nav {
 }
 .carousel-item__btn{
   background-color: #43519c;
-  padding: 10px 15px;
+  padding: 10px;
+  width: 80%;
   color: white;
   height: 45px;
   text-align: center;
@@ -513,12 +514,40 @@ nav {
   color:black;
   height: 200px;
   font-size: 15px;
+  font-family: MuseoSansCyrl300,sans-serif;
+}
+.footer-map{
+  background-color: rgb(67, 81, 156);
+  color:white;
+  padding:10px 20px;
+  margin: 25px 0 25px 20px;
+  font-size: 15px;
 }
 .footer-logo{
   display: flex;
 }
+.footer-logo__img{
+  width: 80px;
+}
+.footer-logo__text{
+  font-family: MuseoSansCyrl700,sans-serif;
+  padding-top: 17px;
+  padding-left: 10px;
+}
+.footer__title{
+  font-size: 16px;
+  color: rgb(67, 81, 156);
+  font-family: MuseoSansCyrl700,sans-serif;
+}
+.footer-content{
+  padding-top: 7px;
+}
 .social__icon{
   width: 20px;
+}
+.footer-bottom{
+  padding-top: 45px;
+  font-size: 14px;
 }
 /************* Media queries **************/
 @media (max-width: 1550px){
