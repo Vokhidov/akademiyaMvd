@@ -23,7 +23,7 @@ $(".international-carousel").slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1130,
       settings: {
         slidesToShow: 2,
       },
@@ -34,8 +34,3 @@ $(".international-carousel").slick({
     },
   ],
 });
-
-/ PagePiling /;
-// $(document).ready(function() {
-// 	$('#pagepiling').pagepiling();
-// });

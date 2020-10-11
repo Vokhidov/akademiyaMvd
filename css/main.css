@@ -213,12 +213,12 @@ nav {
 .text-job {
   font-family: MuseoSansCyrl500, sans-serif;
   font-size: 15px;
-  padding-top: 8px;
+  padding-top: 5px;
 }
 
 .item-date {
   font-size: 15px;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 /********** Header-settings **************/
@@ -267,6 +267,7 @@ nav {
 main {
   padding: 60px 0;
 }
+
 .info-title {
   font-size: 52px;
   font-family: MuseoSansCyrl700, sans-serif;
@@ -639,7 +640,7 @@ main {
 }
 
 .footer-bottom {
-  padding-top: 45px;
+  padding: 45px;
 }
 
 /************* Media queries **************/
@@ -675,14 +676,43 @@ main {
 }
 
 @media (max-width: 768px) {
-  .header,
-  .social,
-  .international,
-  .student {
-    height: 180vh;
+  .header {
+    height: 170vh;
   }
+
   main .col-md-4 {
     width: 30%;
     flex: 0 0 30%;
+  }
+
+  .nav-carousel {
+    top: 9%;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-carousel__col:nth-child(2) {
+    margin-top: 10px;
+    padding: 0;
+  }
+  .nav-settings__icon,
+  .nav-settings__languages {
+    display: none;
+  }
+  .nav-settings {
+    justify-content: flex-end !important;
+  }
+  main {
+    padding-top: 400px !important;
+  }
+  .info-title {
+    font-size: 35px;
+    padding-top: 30px;
+  }
+  .info-card {
+    padding-top: 30px;
+  }
+  .mycard {
+    margin-top: 10px;
   }
 }
