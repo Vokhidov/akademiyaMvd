@@ -34,3 +34,31 @@ $(".international-carousel").slick({
     },
   ],
 });
+
+
+const navSlide = () => {
+  const burger = document.querySelector(".nav-settings__menu");
+  const nav = document.querySelector(".menu");
+  const navLinks = document.querySelectorAll(".navbar-list li");
+
+  burger.addEventListener("click", () => {
+    //toogle nav
+    nav.classList.toggle("nav-active");
+
+    //animation
+    burger.classList.toggle("toggle");
+
+    //animate links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s`;
+      }
+    });
+  });
+};
+
+navSlide();

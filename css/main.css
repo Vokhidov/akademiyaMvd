@@ -228,7 +228,7 @@ nav {
   justify-content: space-around !important;
   align-items: center;
   height: 100px;
-  flex: 1;
+  flex: 0 0 50%;
   max-width: 350px;
 }
 
@@ -260,7 +260,22 @@ nav {
   top: 0;
   color: white;
   font-size: 20px;
-  display: none;
+  transform: translateX(100%);
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease-in;
+}
+.navbar-list{
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  text-align: center;
+  margin-top: 30px;
+}
+.navbar-link{
+  color:white;
 }
 
 /************** Header-main ************/
@@ -634,7 +649,9 @@ main {
 .footer-content {
   padding-top: 7px;
 }
-
+.footer-social{
+  text-align: center;
+}
 .social__icon {
   width: 20px;
 }
@@ -705,8 +722,21 @@ main {
   .nav-carousel {
     top: 9%;
   }
+  .footer-address, .footer-number, .footer-email, .mistake, .company, .licence{
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footer-logo{
+    display: flex;
+    justify-content: center;
+  }
 }
+/************** Js************/
+.nav-active {
+  transform: translateX(0%);
 
+}
+/************** Media **************/
 @media (max-width: 700px) {
   .nav-carousel__col:nth-child(2) {
     margin-top: 10px;
